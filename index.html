@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Ryaba</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap&subset=cyrillic" rel="stylesheet"> 
+</head>
+<body>
+
+	<div class="container" id="wrapper">
+		<h1>Курочка ряба</h1>
+
+		<div class="tale_initial">
+			<p>Жили-были <span>{var1}</span> да <span>{var2}</span></p>
+			<p>Была у них <span>{var3}</span></p>
+			<p>Снесла <span>{var3} {var4}</span>, не простое - золотое</p>
+			<p>- <span>{var1}</span> бил, бил - не разбил</p>
+			<p>- <span>{var2}</span> била, била - не разбила</p>
+			<p><span>{var5}</span> бежала, <span>{var6}</span> задела, <span>{var4}</span> упало и разбилось.</p>
+			<p><span>{var1}</span> плачет, <span>{var2}</span> плачет, а <span>{var3}</span> кудахчет:</p>
+			<p><span>{speach}</span></p>
+		</div>
+  
+		<form id="messages">
+  			
+			<div class="container">
+				
+				<div class="row">
+					
+					<div class="form-group, col-4">
+						<label for="field1">var1</label>
+						<input type="text" class="form-control" id="field1" name="var1" placeholder="Дед" value="">
+				  	</div>
+
+				  	<div class="form-group, col-4">
+						<label for="field2">var2</label>
+						<input type="text" class="form-control" id="field2" name="var2" placeholder="Баба" value="">
+					</div>
+
+					<div class="form-group, col-4">
+						<label for="field3">var3</label>
+						<input type="text" class="form-control" id="field3" name="var3" placeholder="Курочка ряба" value="">
+					</div>
+
+				</div>
+
+			</div>
+
+		  
+			<div class="container">
+				
+				<div class="row">
+					
+					<div class="form-group, col-4">
+						<label for="field4">var4</label>
+						<input type="text" class="form-control"  id="field4" name="var4" placeholder="яичко" value="">
+					</div>
+
+				  	<div class="form-group, col-4">
+						<label for="field5">var5</label>
+						<input type="text" class="form-control" id="field5" name="var5" placeholder="мышка" value="">
+					</div>
+
+					<div class="form-group, col-4">
+						<label for="field6">var6</label>
+						<input type="text" class="form-control" id="field6" name="var6" placeholder="хвостиком" value="">
+					</div>
+
+				</div>
+
+			</div>
+		  
+
+		  	<div class="container">
+				
+				<div class="row">
+					
+					<div class="form-group, col-12">
+						<label for="field7">speach</label>
+						<input type="text" class="form-control" id="field7" name="speach" placeholder="&quot;Не плачьте, я снесу вам еще яичко, да не золотое, а простое!&quot;" value="">
+					</div>
+
+				</div>
+
+			</div>
+
+		</form>
+
+		<br>
+  		
+		<div class="container" id="btn-container">
+			<div class="row">
+				<div class="col-12">
+					<button id="create-button" class="btn btn-primary">Создать</button>
+				</div>
+			</div>
+		</div>
+  
+		<div class="container" id="result-container">
+			<div class="row">
+		  		<div id="result"></div>
+			</div>
+		</div>
+		
+	</div>
+	
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/tale.js"></script>
+
+</body>
+</html>

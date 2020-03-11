@@ -1,0 +1,38 @@
+body {
+	font-family: 'Comfortaa', cursive;
+}
+
+.container {
+	margin-top: 10px;
+}
+
+#wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.tale_initial {
+	font-size: 14px;
+	align-self: center;
+	text-align: center;
+	margin: 10px;
+}
+
+span {
+	font-style: italic;
+}
+
+#btn-container {
+	display: flex;
+	justify-content: center;
+	margin: 10px auto;
+}
+
+#result-container {
+	display: flex;
+	justify-content: center;
+}
+
+#result {
+	text-align: center;
+}
